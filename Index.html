@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>new</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="pop">
+    <h1>Login</h1>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <button onclick="btn()" class="btn">Login</button>
+  </div>
+  <div class="main">
+    <h3>Welcome </h3>
+    <h3>To Ali Site </h3>
+    <div class="a" hidden>
+      <div class="a1">
+        <form onsubmit="return false">
+          <h2>Sing up</h2>
+          <input id="name" class="inp" type="text" placeholder=" Name"/>
+          <input id="pin" class="inp" type="password" placeholder=" Pin"/>
+          <button onclick="login()">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="b" hidden>
+      <div class="a1">
+        <div class="a11">
+          <h2><ion-icon name="person-circle-outline"></ion-icon></h2>
+          <div class="search">
+            <label><ion-icon name="search-outline"></ion-icon></label>
+            <input class="sear" type="text"id="sear" placeholder=" Search.." />
+            <label onclick="search()"><ion-icon name="play-outline"></ion-icon></label>
+          </div>
+          <p id="para"></p>
+          <p>Aap Yaha Par</p>
+          <p>Photo Aur Video Dekh Sakte Hai..</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="c" hidden>
+      <div class="a1">
+        <img id="resultImage" onclick="fulls(this)" />
+        <video id="resultVideo" controls hidden></video>
+      </div>
+    </div>
+  </div>
+  <script src="ali.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
